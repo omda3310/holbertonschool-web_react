@@ -21,3 +21,17 @@
     justify-content: center;
     font-family: sans-serif;
 }
+label {
+    padding-right: 10px;
+    width: 150px;
+    text-align: center;
+    clear: left;
+}
+input {
+    padding-left: 10px;
+    margin-right: 10px;
+}
+.App-body button {
+    padding: 5px, 0px;
+    margin-right: 10px;
+}

@@ -1,10 +1,14 @@
 import HolbertonSchool from './HolbertonSchool.jpg';
 import './App.css';
 import { getFullYear, getFooterCopy } from './utils';
+import { Notifications } from './Notifications';
 
 function App() {
   return (
     <div className="App">
+      <div className='notification'>
+        {Notifications()}
+      </div>
       <div className="App-header">
         <img src={HolbertonSchool} className="App-logo" alt="logo" />
         <h1> School dashboard </h1>
@@ -15,7 +19,7 @@ function App() {
           <label className='lab_email' for='email'>
             Email:
           </label>
-          <input type='email' id='email' name='email' /> 
+          <input type='email' id='email' name='email' />
           <label className='lab_password' for='password'>
             Password:
           </label>
