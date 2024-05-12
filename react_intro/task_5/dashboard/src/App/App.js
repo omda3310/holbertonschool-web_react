@@ -1,7 +1,7 @@
-import HolbertonSchool from './HolbertonSchool.jpg';
+import HolbertonSchool from '../assets/HolbertonSchool.jpg';
 import './App.css';
-import { getFullYear, getFooterCopy } from './utils';
-import { Notifications } from './Notifications';
+import { getFullYear, getFooterCopy } from '../utils/utils';
+import { Notifications } from '../Notifications/Notifications.js';
 
 function App() {
   return (
