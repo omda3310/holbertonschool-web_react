@@ -2,7 +2,7 @@ import React from 'react'
 import './Notifications.css'
 import { getLatestNotification } from '../utils/utils';
 
-export function Notifications() {
+function Notifications() {
   return (
     <div className='Notifications'>
         <p style={{color: 'black'}}>Here is the list of notifications</p>
@@ -29,3 +29,4 @@ export function Notifications() {
     </div>
   )
 }
+export default Notifications;
