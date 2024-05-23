@@ -5,7 +5,7 @@ import './Header.css';
 
 function Header() {
   return (
-      <div className="App-header">
+      <div className="App">
         <img src={HolbertonSchool} className="App-logo" alt="logo" />
         <h1> School dashboard </h1>
       </div>

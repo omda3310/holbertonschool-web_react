@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 import CourseListRow from './CourseListRow';
 import './CourseList.css';
 import CourseShape from './CourseShape';
@@ -33,8 +34,8 @@ function CourseList({ listCourses }) {
 CourseList.defaultProps = {
 	listCourses : [],
 };
-CourseList.propTypes = {
-	listCourses: propTypes.arrayOf(CourseShape),
+CourseList.PropTypes = {
+	listCourses: PropTypes.arrayOf(CourseShape).isRequired,
 };
 
 export default CourseList;

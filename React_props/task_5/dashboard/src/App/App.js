@@ -1,5 +1,6 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
+import { getLatestNotification } from '../utils/utils';
 import Header from '../Header/Header';
 import Login from '../Login/Login';
 import Footer from '../Footer/Footer';
@@ -22,12 +23,12 @@ const listNotifications = [
 function App({ isLoggedIn }) {
   return (
     <>
-      <Notifications listNotifications={listNotifications} />
+      <Notifications listNotifications={listNotifications}/>
       <div className="App">
         <Header />
       </div>
       <div className='App-body'>
-        {isLoggedIn ? <CourseList listCourses={listCourses} /> : <Login />}
+        {!isLoggedIn ? <CourseList listCourses={listCourses}/> : <Login />}
       </div>
       <div className='App-footer'>
         <Footer />
@@ -39,8 +40,8 @@ function App({ isLoggedIn }) {
 App.defautProps = {
   isLoggedIn: false,
 };
-App.propTypes = {
-  isLoggedIn: propTypes.bool.isRequired,
+App.PropTypes = {
+  isLoggedIn: PropTypes.bool.isRequired,
 };
 
 export default App;
