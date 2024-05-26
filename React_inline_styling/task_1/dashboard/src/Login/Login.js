@@ -22,8 +22,6 @@ function Login() {
 const stl = StyleSheet.create({
     Appbody: {
 		padding: "25px",
-		height: "320px",
-		borderBottom: `#e0003c 3px solid`,
 	},
     input: {
         paddingleft: "10px",

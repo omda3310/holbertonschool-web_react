@@ -94,9 +94,8 @@ App.PropTypes = {
 const stl = StyleSheet.create({
 	App: {
 		display: 'flex',
-		aligncontent:start,
         justifycontentfirst: "baseline",
-		border: `#e0003c 3px solid`,
+		borderBottom: `#e0003c 3px solid`,
 		width: "100%",
 		height: "140px",
 	},
@@ -106,9 +105,7 @@ const stl = StyleSheet.create({
 		borderBottom: `#e0003c 3px solid`,
 	},
 	Appfooter: {
-		display: "flex",
-		alignitems: "center",
-		justifycontent: "center",
+		textAlign: "center",
 		fontfamily: "sans-serif",
 	},
 });
