@@ -14,7 +14,7 @@ function Header() {
 const stl = StyleSheet.create({
   Apphd: {
     display: "flex",
-    alignitems: "center",
+    textAlign: "center",
     color: "#e0003c",
   },
   Applogo: {

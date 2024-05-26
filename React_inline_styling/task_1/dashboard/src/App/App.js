@@ -40,7 +40,7 @@ class App extends React.Component {
 
 	render() {
 		const { isLoggedIn } = this.props;
-		if (isLoggedIn) {
+		if (!isLoggedIn) {
 			return (
 				<>
 					<Notifications listNotifications={listNotifications} />

@@ -55,8 +55,11 @@ const stl = StyleSheet.create({
 	tabbody: {
 		padding: "10px",
 		border: `1px, solid, rgb(32, 16, 16)`,
-		textalign: "left",
+		textalign: "center",
 	},
+	th: {
+		textAlign: "left",
+	}
 });
 
 export default CourseList;

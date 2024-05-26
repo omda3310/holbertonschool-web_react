@@ -16,8 +16,8 @@ function CourseListRow({ isHeader, textFirstCell, textSecondCell}) {
     } else {
       return(
         <tr style={bgStyle}>
-          <th>{textFirstCell}</th>
-          <th>{textSecondCell}</th>
+          <th style={{textAlign: "left"}}>{textFirstCell}</th>
+          <th style={{textAlign: "left"}}>{textSecondCell}</th>
         </tr>
       )
     }
