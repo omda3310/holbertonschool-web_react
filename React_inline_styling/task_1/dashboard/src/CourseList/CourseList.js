@@ -4,7 +4,7 @@ import { StyleSheet, css } from 'aphrodite';
 import CourseListRow from './CourseListRow';
 import CourseShape from './CourseShape';
 
-function CourseList({ listCourses }) {
+function CourseList({ listCourses = [] }) {
 	return (
 		<table className={css(stl.table)}>
 			<thead className={css(stl.tabhead)}>
@@ -16,12 +16,12 @@ function CourseList({ listCourses }) {
 					listCourses.length === 0 ? (
 						<CourseListRow isHeader={false} textFirstCell='No course available yet' />
 					) : (
-						listCourses.map(course => (
+						listCourses.map((course) => (
 							<CourseListRow
 							    key={course.id}
+							    textFirstCell={course.name}
+								textSecondCell={course.credit}
 								isHeader={false}
-								textFirstCell={course.name}
-								textSecondCell={course.credit.toString()}
 							/>
 						))
 					)
@@ -31,11 +31,8 @@ function CourseList({ listCourses }) {
 	)
 }
 
-CourseList.defaultProps = {
-	listCourses : [],
-};
-CourseList.PropTypes = {
-	listCourses: PropTypes.arrayOf(CourseShape).isRequired,
+CourseList.propTypes = {
+	listCourses: PropTypes.arrayOf(CourseShape),
 };
 
 const stl = StyleSheet.create({

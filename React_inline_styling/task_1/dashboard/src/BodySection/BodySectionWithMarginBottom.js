@@ -19,7 +19,7 @@ const stl = StyleSheet.create({
 	}
 });
 
-BodySectionWithMarginBottom.PropTypes = {
-	title: PropTypes.string.isReauired,
+BodySectionWithMarginBottom.propTypes = {
+	title: PropTypes.string,
 	children: PropTypes.node,
 }

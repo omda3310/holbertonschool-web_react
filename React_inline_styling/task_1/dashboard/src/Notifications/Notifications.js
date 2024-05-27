@@ -47,6 +47,7 @@ class Notifications extends React.Component {
 							) : (
 								listNotifications.map(notification => (
 									<NotificationItem
+									    key={notification.id}
 										id={notification.id}
 										type={notification.type}
 										value={notification.value}
@@ -75,7 +76,8 @@ Notifications.propTypes = {
 
 const stl = StyleSheet.create({
 	menuItem: {
-		textalign: "right",
+		textAlign: "right",
+		
 	},
 	Notifications: {
 		display: "block",

@@ -11,9 +11,9 @@ import BodySectionWithMarginBottom from '../BodySection/BodySectionWithMarginBot
 import BodySection from '../BodySection/BodySection';
 
 const listCourses = [
-	{ id: '1', name: 'ES6', credit: 60 },
-	{ id: '2', name: 'Webpack', credit: 20 },
-	{ id: '3', name: 'React', credit: 40 },
+	{ id: 1, name: 'ES6', credit: 60 },
+	{ id: 2, name: 'Webpack', credit: 20 },
+	{ id: 3, name: 'React', credit: 40 },
 ];
 
 const listNotifications = [
@@ -86,8 +86,8 @@ App.defautProps = {
 	isLoggedIn: false,
 	logOut: () => { },
 };
-App.PropTypes = {
-	isLoggedIn: PropTypes.bool.isRequired,
+App.propTypes = {
+	isLoggedIn: PropTypes.bool,
 	logOut: PropTypes.func,
 };
 
