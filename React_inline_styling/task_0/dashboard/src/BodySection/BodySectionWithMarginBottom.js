@@ -13,7 +13,7 @@ export default class BodySectionWithMarginBottom extends React.Component {
     }
 }
 
-BodySectionWithMarginBottom.PropTypes = {
-	title: PropTypes.string.isReauired,
+BodySectionWithMarginBottom.propTypes = {
+	title: PropTypes.string,
 	children: PropTypes.node,
 }

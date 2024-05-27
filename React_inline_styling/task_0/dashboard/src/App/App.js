@@ -86,8 +86,8 @@ App.defautProps = {
 	isLoggedIn: false,
 	logOut: () => { },
 };
-App.PropTypes = {
-	isLoggedIn: PropTypes.bool.isRequired,
+App.propTypes = {
+	isLoggedIn: PropTypes.bool,
 	logOut: PropTypes.func,
 };
 

@@ -28,8 +28,15 @@ NotificationItem.propTypes = {
   html: PropTypes.shape({
     __html: PropTypes.string
   }),
-  markAsRead: PropTypes.func.isRequired,
+  markAsRead: PropTypes.func,
   id: PropTypes.number,
 };
+
+NotificationItem.defaultProps = {
+  type: 'default',
+  value: "",
+  html: {},
+  id: NaN,
+}
 
 export default NotificationItem;

@@ -5,12 +5,12 @@ import PropTypes from "prop-types";
 import NotificationItemShape from "./NotificationItemShape";
 
 class Notifications extends React.Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 		this.markAsRead = this.markAsRead.bind(this);
 	}
-	markAsRead(id) {
-		console.log(`Notification ${id} has been marked as read`);
+	markAsRead(ide) {
+		console.log(`Notification ${ide} has been marked as read`);
 	}
 
 	shouldComponentUpdate(nextProps) {
@@ -33,7 +33,7 @@ class Notifications extends React.Component {
 								background: "transparent",
 								border: "none",
 								position: "absolute",
-								right: 20,
+								right: 10,
 							}}
 						>
 							x
@@ -47,6 +47,7 @@ class Notifications extends React.Component {
 							) : (
 								listNotifications.map(notification => (
 									<NotificationItem
+									    key={notification.id}
 										id={notification.id}
 										type={notification.type}
 										value={notification.value}
@@ -66,6 +67,7 @@ class Notifications extends React.Component {
 Notifications.defaultProps = {
 	displayDrawer: true,
 	listNotifications: [],
+	id: NaN,
 };
 
 Notifications.propTypes = {
