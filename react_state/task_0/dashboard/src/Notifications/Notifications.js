@@ -76,17 +76,13 @@ Notifications.defaultProps = {
 
 Notifications.propTypes = {
 	displayDrawer: PropTypes.bool,
-	listNotifications: PropTypes.arrayOf(NotificationItemShape),
+	listNotifications: PropTypes.arrayOf(NotificationItemShape).isRequired,
 	handleDisplayDrawer: PropTypes.func,
 	handleHideDrawer: PropTypes.func,
 };
 
-Notifications.defaultProps = {
-	displayDrawer: false,
-	listNotifications: [],
-};
-
 Notifications.propTypes = {
+	displayDrawer: false,
 	displayDrawer: PropTypes.bool,
 	listNotifications: PropTypes.arrayOf(NotificationItemShape),
 };

@@ -80,11 +80,12 @@ class App extends React.Component {
 
 						<BodySectionWithMarginBottom title="Log in to continue">
 							<Login />
+							<BodySection title="News from the School">
+							    <p>Follow Us</p>
+					        </BodySection>
 						</BodySectionWithMarginBottom>
 					)}
-					<BodySection title="News from the School">
-						<p>Follow Us</p>
-					</BodySection>
+					
 				</div>
 
 				<div className={css(stl.Appfooter)}>
