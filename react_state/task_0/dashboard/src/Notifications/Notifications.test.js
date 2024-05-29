@@ -34,4 +34,45 @@ describe('<Notifications />', () => {
         expect(wrapper.find("div.Notifications")).toHaveLength(1);
     });
 
+    beforeEach(() => {
+		handleDisplayDrawerMock = jest.fn();
+		handleHideDrawerMock = jest.fn();
+		wrapper = shallow(
+			<Notifications
+				displayDrawer={false}
+				listNotifications={[]}
+				handleDisplayDrawer={handleDisplayDrawerMock}
+				handleHideDrawer={handleHideDrawerMock}
+			/>
+		);
+	});
+
+	it('renders without crashing', () => {
+		expect(wrapper.exists()).toBe(true);
+	});
+
+	it('renders menuItem when displayDrawer is false', () => {
+		expect(wrapper.find('.menuItem').exists()).toBe(true);
+	});
+
+	it('does not render div.Notifications when displayDrawer is false', () => {
+		expect(wrapper.find('.Notifications').exists()).toBe(false);
+	});
+
+	it('renders div.Notifications when displayDrawer is true', () => {
+		wrapper.setProps({ displayDrawer: true });
+		expect(wrapper.find('.Notifications').exists()).toBe(true);
+	});
+
+	it('calls handleDisplayDrawer when the menu item is clicked', () => {
+		wrapper.find('.menuItem').simulate('click');
+		expect(handleDisplayDrawerMock).toHaveBeenCalled();
+	});
+
+	it('calls handleHideDrawer when the close button is clicked', () => {
+		wrapper.setProps({ displayDrawer: true });
+		wrapper.find('button').simulate('click');
+		expect(handleHideDrawerMock).toHaveBeenCalled();
+	});
+
 });
