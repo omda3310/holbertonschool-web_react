@@ -1,6 +1,6 @@
 React Redux Reducer+Selector
 
-./reducer-select.jpg
+![./reducer-select.jpg](https://github.com/omda3310/holbertonschool-web_react/blob/main/react_redux_reducer_selector/reducer-select.jpg)
 
 Resources
 Reducers
