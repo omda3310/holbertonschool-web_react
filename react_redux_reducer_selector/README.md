@@ -1,6 +1,7 @@
 React Redux Reducer+Selector
 
-![alt text](image.png)
+vscode-remote://wsl%2Bubuntu-22.04/home/ayed/holbertonschool-web_react/react_redux_reducer_selector/reducer-select.jpg
+
 
 Resources
 Reducers
@@ -18,3 +19,6 @@ Recognize why mutations should not happen within a reducer.
 Use Immutable within the reducer.
 Utilize Normalizr within the app.
 Understand selectors: what they are and when to use them.
+
+
+[def]: image.png
