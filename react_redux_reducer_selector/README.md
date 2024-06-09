@@ -1,7 +1,6 @@
 React Redux Reducer+Selector
 
-vscode-remote://wsl%2Bubuntu-22.04/home/ayed/holbertonschool-web_react/react_redux_reducer_selector/reducer-select.jpg
-
+https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2019/12/5b02610e1a538e005104.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20240609%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20240609T121158Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=8a76e7f09c30620b49c4ec3dcbf8fff14f6da7e755a307061e1d2d140910dcd4
 
 Resources
 Reducers
@@ -21,4 +20,3 @@ Utilize Normalizr within the app.
 Understand selectors: what they are and when to use them.
 
 
-[def]: image.png
