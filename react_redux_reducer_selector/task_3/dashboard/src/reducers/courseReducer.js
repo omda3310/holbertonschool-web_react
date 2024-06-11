@@ -2,7 +2,7 @@ import { SELECT_COURSE, UNSELECT_COURSE, FETCH_COURSE_SUCCESS } from "../actions
 
 const initialize = [];
 
-const courseReducer = (state = initialize, action) {
+const courseReducer = (state = initialize, action) => {
     switch (action.type) {
         case FETCH_COURSE_SUCCESS:
             return action.data.map(course => ({
