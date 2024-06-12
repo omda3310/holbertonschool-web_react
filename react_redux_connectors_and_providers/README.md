@@ -30,27 +30,40 @@ Your project should be organized as follows:
 
 project-root/
 ├── dist/
+
 │   ├── courses.json
+
 │   ├── login-success.json
+
 │   └── notifications.json
 
+
 ├── src/
+
 │   ├── actions/
 │   │   └── ...
+
 │   ├── reducers/
 │   │   └── ...
+
 │   ├── selectors/
 │   │   └── ...
+
 │   ├── components/
 │   │   └── ...
+
 │   ├── containers/
 │   │   └── ...
+
 │   ├── App.js
 │   └── index.js
 
 ├── .babelrc
+
 ├── package.json
+
 └── README.md
+
 
 
 Usage
