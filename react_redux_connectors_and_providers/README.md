@@ -1,6 +1,6 @@
 React Redux Connectors and Providers
 
-https://github.com/omda3310/holbertonschool-web_react/blob/main/react_redux_connectors_and_providers/reduxProviser.jpg
+![alt text](reduxProviser.jpg)https://github.com/omda3310/holbertonschool-web_react/blob/main/react_redux_connectors_and_providers/reduxProviser.jpg
 
 Overview
 This project focuses on understanding and implementing React Redux connectors and providers. You will learn to manage state in your React applications efficiently using Redux and enhance your app's performance with various tools and techniques.
