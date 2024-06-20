@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, css } from 'aphrodite';
+import { connect } from "react-redux";
 import { getLatestNotification } from '../utils/utils';
 import Header from '../Header/Header';
 import Login from '../Login/Login';
@@ -161,4 +162,10 @@ const stl = StyleSheet.create({
 	},
 });
 
-export default App;
+export const mapStateToProps = (state) => {
+	return ({
+		isLoggedIn: state.get("isUserLoggedIn"),
+	});
+};
+
+export default connect(mapStateToProps)(App);

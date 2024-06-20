@@ -1,6 +1,7 @@
 import React from "react";
-import App from "./App";
+import App, { mapStateToProps } from "./App";
 import { shallow } from "enzyme";
+import { fromJS } from 'immutable';
 
 describe("<App />", () => {
 	it("App renders without crashing", () => {
@@ -76,4 +77,16 @@ describe("<App />", () => {
 		wrapper.instance().handleHideDrawer();
 		expect(wrapper.state('displayDrawer')).toBe(false);
 	});
-});    
+});
+
+describe('mapStateToProps', () => {
+	it('should return the correct isLoggedIn value from state', () => {
+	  const state = fromJS({
+		isUserLoggedIn: true
+	  });
+	  const rightProps = {
+		isLoggedIn: true
+	  };
+	  expect(mapStateToProps(state)).toEqual(rightProps);
+	});
+});
